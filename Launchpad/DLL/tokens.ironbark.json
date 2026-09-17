@@ -1,0 +1,38 @@
+{
+  "slug": "ironbark",
+  "name": "Ironbark",
+  "legal_name": "Ironbark",
+  "email": "hello@ironbark.com.au",
+  "catchline": "Coast life, unbroken.",
+  "hero": "AU tough. Table tough.",
+  "archetype": "Everyman + Explorer",
+  "tagline_short": "AU tough \u00b7 table tough",
+  "fonts": {
+    "display": "Fraunces",
+    "body": "Source Sans 3",
+    "google": "https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+  },
+  "colors": {
+    "bark": "#2C1810",
+    "sap": "#5C3A28",
+    "sand": "#E8DCC8",
+    "leaf": "#3D5A45",
+    "rust": "#A65D3F",
+    "ink": "#1A120E",
+    "paper": "#F3EBDD",
+    "muted": "#3a2a22"
+  },
+  "voice": {
+    "about_lede": "Ironbark is Australian toughness you already know \u2014 the timber that laughs at weather. Same idea for crockery.",
+    "home_lede": "Trade-grade unbreakable ware with timber-hard resolve. Grown for weather. Set for the table.",
+    "trust": [
+      "AU hardwood grit",
+      "Trade kit, home-facing",
+      "Fulfilled from Yatala QLD"
+    ],
+    "cta_shop": "Browse the kit",
+    "cta_about": "Our story"
+  },
+  "radius": "3px",
+  "nav_style": "underline"
+}

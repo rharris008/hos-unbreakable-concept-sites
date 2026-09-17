@@ -1,0 +1,38 @@
+{
+  "slug": "c3n6",
+  "name": "C3N6",
+  "legal_name": "C3N6",
+  "email": "hello@c3n6.com.au",
+  "catchline": "Coast life, unbroken.",
+  "hero": "The formula for a table that doesn\u2019t shatter.",
+  "archetype": "Sage + Magician",
+  "tagline_short": "Formula brand \u00b7 coast precision",
+  "fonts": {
+    "display": "IBM Plex Sans",
+    "mono": "IBM Plex Mono",
+    "body": "IBM Plex Sans",
+    "google": "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap"
+  },
+  "colors": {
+    "ink": "#111418",
+    "paper": "#F4F5F7",
+    "line": "#D0D4DA",
+    "accent": "#C0392B",
+    "mute": "#5C6570",
+    "white": "#FFFFFF",
+    "muted": "#5C6570"
+  },
+  "voice": {
+    "about_lede": "Melamine\u2019s real formula is C\u2083H\u2086N\u2086. We cut it to C3N6 \u2014 rhythm you can say, meaning you can keep.",
+    "home_lede": "Precision brand. Lab-clean type. Chemistry wink. Coast life that doesn\u2019t shatter.",
+    "trust": [
+      "Chemistry with a point",
+      "Lab-precise kit",
+      "Fulfilled from Yatala QLD"
+    ],
+    "cta_shop": "See the kit",
+    "cta_about": "Read the formula"
+  },
+  "radius": "0",
+  "nav_style": "mono"
+}

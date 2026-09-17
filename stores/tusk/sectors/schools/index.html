@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Schools — Tusk</title>
+<meta name="description" content="Tusk concept store — Coast life, unbroken. Superware melamine &amp; Polysafe polycarbonate from Yatala QLD."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#0A0C10;--ink:#F2EDE4;--accent:#F2EDE4;--accent2:#E24A3B;--card:#111;--line:#F2EDE4;--mute:#9AA3B2;--cta:#F2EDE4;--cta-ink:#0A0C10;--banner-bg:#E24A3B;--banner-ink:#fff;--radius:0;--display:"Archivo Black",sans-serif;--body:Archivo,system-ui,sans-serif;--nav-size:.68rem;--btn-radius:0;--card-radius:0;}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--body);background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:inherit;text-decoration:none} img{max-width:100%;display:block}
+.banner{background:var(--banner-bg);color:var(--banner-ink);font:700 11px/1.3 var(--body);letter-spacing:.1em;text-transform:uppercase;padding:.55rem 1rem;text-align:center}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.site-header{display:flex;justify-content:space-between;align-items:end;padding:1.35rem 0 1rem;border-bottom:2px solid var(--accent);gap:1rem;flex-wrap:wrap}
+.logo{font-family:var(--display);font-size:1.3rem;letter-spacing:.04em}
+.logo small{display:block;font-family:var(--body);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-top:.2rem}
+.nav{display:flex;flex-wrap:wrap;gap:.1rem .65rem}
+.nav a{color:var(--mute);font-weight:700;font-size:var(--nav-size)}
+.nav a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--cta);color:var(--cta-ink);font-weight:700;padding:.85rem 1.2rem;border-radius:var(--btn-radius);border:none;cursor:pointer;font:inherit}
+.btn-ghost{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.btn.is-disabled,.btn[disabled]{opacity:.45;cursor:not-allowed}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;padding:2.2rem 0;align-items:center}
+.kicker{font:700 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--accent2);margin-bottom:.75rem}
+h1,.display{font-family:var(--display);font-weight:700;line-height:1.08;color:var(--accent)}
+h1{font-size:clamp(1.9rem,4.2vw,3rem);margin-bottom:.9rem}
+h2{font-family:var(--display);font-size:clamp(1.35rem,2.6vw,1.85rem);color:var(--accent);margin-bottom:.7rem}
+.lede{font-size:1.05rem;max-width:48ch;color:var(--mute);margin-bottom:1.15rem}
+.hero-vis,.gallery{background:var(--card);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden}
+.hero-vis img,.gallery img{width:100%;aspect-ratio:1;object-fit:cover}
+.proof{display:inline-block;background:var(--card);border:1.5px solid var(--accent);padding:.4rem .85rem;font-weight:700;font-size:.82rem;border-radius:99px;margin-bottom:.85rem}
+.catgrid,.secgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.75rem;margin:1.15rem 0}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:var(--card-radius);padding:1rem;font-weight:700;color:var(--accent);display:block}
+.cat span{display:block;font-weight:600;font-size:.78rem;color:var(--mute);margin-top:.35rem}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0}
+.trust > div{background:var(--card);border:1px solid var(--line);border-radius:var(--card-radius);padding:1.25rem}
+.trust h3{font-family:var(--display);font-size:1.05rem;color:var(--accent);margin-bottom:.3rem}
+.trust p{font-size:.88rem;color:var(--mute)}
+.section{padding:1.7rem 0}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:1rem}
+.pcard{background:var(--card);border:1px solid var(--line);border-radius:var(--card-radius);overflow:hidden;color:inherit;display:block}
+.pcard img{width:100%;aspect-ratio:1;object-fit:cover;background:#fff}
+.pcard .body{padding:.85rem}
+.pcard .name{font-weight:700;font-size:.88rem;color:var(--accent)}
+.pcard .price{font-weight:700;margin-top:.3rem}
+.pcard .note{font-size:.7rem;color:var(--mute);margin-top:.22rem}
+.pdp{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;padding:2rem 0;align-items:start}
+.price-lg{font-size:1.4rem;font-weight:700;color:var(--accent);margin:.5rem 0 1rem}
+.soldby{font-size:.88rem;font-weight:700;color:var(--accent2);margin-bottom:1rem}
+.bullets{margin:1rem 0 1.15rem;padding-left:1.1rem} .bullets li{margin:.3rem 0}
+.note-soft{font-size:.84rem;color:var(--mute);margin-top:.7rem}
+.prose{max-width:62ch} .prose p{margin:0 0 1rem}
+.faq details{border-bottom:1px solid var(--line);padding:1rem 0}
+.faq summary{font-weight:700;cursor:pointer;color:var(--accent)}
+.form{display:grid;gap:.8rem;max-width:420px}
+.form label{font-weight:700;font-size:.84rem;display:grid;gap:.3rem}
+.form input,.form textarea,.form select{padding:.7rem .8rem;border:1.5px solid var(--line);border-radius:12px;font:inherit;background:var(--card);color:var(--ink)}
+.table{width:100%;border-collapse:collapse;margin:1rem 0}
+.table th,.table td{text-align:left;padding:.6rem .5rem;border-bottom:1px solid var(--line);font-size:.94rem}
+.site-footer{border-top:2px solid var(--accent);padding:1.4rem 0 2.4rem;margin-top:2rem;font-size:.84rem;color:var(--mute)}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:1.2rem}
+.site-footer a{color:var(--mute)} .site-footer a:hover{color:var(--accent)}
+.foot-brand{font-family:var(--display);font-size:1.15rem;color:var(--accent);font-weight:700}
+.subnav{display:flex;flex-wrap:wrap;gap:.45rem;margin:1rem 0 1.35rem}
+.subnav a{border:1.5px solid var(--accent);padding:.32rem .7rem;border-radius:99px;font-weight:700;font-size:.74rem}
+h1,h2,.display,.logo,.foot-brand{text-transform:uppercase}.pcard,.gallery,.hero-vis,.trust{border:4px solid var(--line)}.site-header,.site-footer{border-width:4px}
+@media(max-width:860px){.hero,.pdp,.trust,.foot-grid{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr 1fr}}
+</style>
+
+</head>
+<body>
+<div class="banner">Concept storefront · not taking payment yet · Sold by Hospitality Products (Yatala QLD) via this specialist store</div>
+<div class="wrap">
+  <header class="site-header">
+    <a class="logo" href="../../index.html">Tusk<small>Short. Hard. Animal-tough.</small></a>
+    <nav class="nav"><a href="../../shop/index.html">Shop</a><a href="../../sectors/aged-care/index.html">Aged care</a><a href="../../sectors/childcare-oshc/index.html">Childcare</a><a href="../../sectors/marine-galley/index.html">Marine</a><a href="../../sectors/camp-outdoor/index.html">Camp</a><a href="../../sectors/cafes-venues/index.html">Cafés</a><a href="../../sectors/schools/index.html">Schools</a><a href="../../about/index.html">About</a><a href="../../faq/index.html">FAQ</a><a href="../../contact/index.html">Contact</a></nav>
+  </header>
+</div>
+
+<div class="wrap section">
+  <div class="kicker">Sector · Schools</div>
+  <h1>Schools</h1>
+  <p class="lede">Canteen and boarding tables built for volume. 80+ melamine & polycarbonate lines. Sold by Hospitality Products (Yatala QLD).</p>
+  <div class="prose">
+    <p>The Tusk face skins this store — the ware itself is Superware melamine and Polysafe polycarbonate, titled honestly.</p>
+  </div>
+  <div class="pgrid"><a class="pcard" href="../../product/superware-dark-blue-round-plate-raised-rim-260mm/index.html" data-ops-kit="Superware SUPER20203 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20203_83635f2d-e498-44e9-a33f-f36b81057993.jpg?v=1753768487" alt="Superware Dark Blue Round Plate Raised Rim 260mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Dark Blue Round Plate Raised Rim 260mm pack of 6</div>
+    <div class="price">$52.81 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-dark-blue-round-plate-rim-230mm/index.html" data-ops-kit="Superware SUPER20202 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20202_f97a0ada-14f0-46e1-ac5d-60894991d277.jpg?v=1753768983" alt="Superware Dark Blue Round Plate Rim 230mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Dark Blue Round Plate Rim 230mm pack of 6</div>
+    <div class="price">$35.31 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-dark-yellow-round-plate-rim-230mm/index.html" data-ops-kit="Superware SUPER20602 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20602_0bf155b8-1404-4ebb-a450-4b02654b2c06.jpg?v=1753768541" alt="Superware Dark Yellow Round Plate Rim 230mm pack of 96"/>
+  <div class="body">
+    <div class="name">Superware Dark Yellow Round Plate Rim 230mm pack of 96</div>
+    <div class="price">$370.29 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-dark-yellow-round-plate-rim-260mm/index.html" data-ops-kit="Superware SUPER20603 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg?v=1753768894" alt="Superware Dark Yellow Round Plate Rim 260mm pack of 48"/>
+  <div class="body">
+    <div class="name">Superware Dark Yellow Round Plate Rim 260mm pack of 48</div>
+    <div class="price">$379.88 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-green-green-round-plate-rim-230mm/index.html" data-ops-kit="Superware SUPER20402 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20402_1b846975-44e3-47fa-a845-01689683ec47.jpg?v=1753768512" alt="Superware Green Green Round Plate Rim 230mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Green Green Round Plate Rim 230mm pack of 6</div>
+    <div class="price">$35.31 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-pasta-plate-w-rim-230mm-20104/index.html" data-ops-kit="Superware 49129 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49129_5ee57f2f-eea8-45d7-bdd8-8713c38e56ff.jpg?v=1753768349" alt="Superware Pasta Plate W/rim 230mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Pasta Plate W/rim 230mm pack of 6</div>
+    <div class="price">$35.31 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-red-round-plate-rim-230mm/index.html" data-ops-kit="Superware SUPER20502 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20502_b8b96905-3246-4540-8e14-c4e478472ccb.jpg?v=1753768953" alt="Superware Red Round Plate Rim 230mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Red Round Plate Rim 230mm pack of 6</div>
+    <div class="price">$35.31 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-red-round-plate-rim-260mm/index.html" data-ops-kit="Superware SUPER20503 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20503_47bf3792-b7c7-4ec0-9f55-dc3077a7ecdc.jpg?v=1753768523" alt="Superware Red Round Plate Rim 260mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Red Round Plate Rim 260mm pack of 6</div>
+    <div class="price">$52.81 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-round-plate-coupe-250mm/index.html" data-ops-kit="Superware 49604 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49604_1c4afe8f-6742-4454-ae0e-5a5e7c37d7a4.jpg?v=1753768445" alt="Superware Round Plate Coupe 250mm pack of 12"/>
+  <div class="body">
+    <div class="name">Superware Round Plate Coupe 250mm pack of 12</div>
+    <div class="price">$98.57 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-round-plate-raised-rim-200mm/index.html" data-ops-kit="Superware 49100 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49100_14d3e0f9-e502-41be-a188-420990f93eaa.jpg?v=1756342028" alt="Superware Round Plate Raised Rim 200mm pack of 12"/>
+  <div class="body">
+    <div class="name">Superware Round Plate Raised Rim 200mm pack of 12</div>
+    <div class="price">$57.43 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-round-plate-raised-rim-230mm-20102/index.html" data-ops-kit="Superware 49103 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49103_3dff45e4-75b5-457d-856b-3ab9b64ecb4d.jpg?v=1753768330" alt="Superware Round Plate Raised Rim 230mm (20102)2"/>
+  <div class="body">
+    <div class="name">Superware Round Plate Raised Rim 230mm (20102)2</div>
+    <div class="price">$72.17 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a>
+<a class="pcard" href="../../product/superware-round-plate-raised-rim-260mm-20103/index.html" data-ops-kit="Superware 49104 melamine" data-vendor="Superware">
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49104_8e46dfb0-a947-4c8a-9ffc-9ec4b874d6f0.jpg?v=1756342314" alt="Superware Round Plate Raised Rim 260mm pack of 6"/>
+  <div class="body">
+    <div class="name">Superware Round Plate Raised Rim 260mm pack of 6</div>
+    <div class="price">$42.09 AUD</div>
+    <div class="note">Sold by Hospitality Products · Yatala QLD</div>
+  </div>
+</a></div>
+  <p style="margin-top:1.4rem">
+    <a class="btn" href="../../contact/index.html">Enquire for this sector</a>
+    &nbsp; <a class="btn btn-ghost" href="../../shop/index.html">View full range</a>
+  </p>
+</div>
+
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">Tusk</div>
+      <p style="margin-top:.5rem">Coast life, unbroken.</p>
+      <p style="margin-top:.5rem">Concept face for colour, type and voice. Sold by Hospitality Products (Yatala QLD) via this specialist storefront.</p>
+    </div>
+    <div><strong>Shop</strong><br/><a href="../../shop/index.html">All products</a><br/><a href="../../shop/plates/index.html">Plates</a><br/><a href="../../shop/bowls/index.html">Bowls</a><br/><a href="../../shop/mugs-cups/index.html">Mugs &amp; cups</a><br/><a href="../../shop/platters-trays/index.html">Platters &amp; trays</a><br/><a href="../../shop/drinkware/index.html">Drinkware</a><br/></div>
+    <div><strong>Sectors</strong><br/><a href="../../sectors/aged-care/index.html">Aged care</a><br/><a href="../../sectors/childcare-oshc/index.html">Childcare &amp; OSHC</a><br/><a href="../../sectors/marine-galley/index.html">Marine galley</a><br/><a href="../../sectors/camp-outdoor/index.html">Camp &amp; outdoor</a><br/><a href="../../sectors/cafes-venues/index.html">Cafés &amp; venues</a><br/><a href="../../sectors/schools/index.html">Schools</a><br/></div>
+    <div>
+      <strong>Help</strong><br/>
+      <a href="../../shipping/index.html">Shipping</a><br/>
+      <a href="../../returns/index.html">Returns</a><br/>
+      <a href="../../faq/index.html">FAQ</a><br/>
+      <a href="../../contact/index.html">Contact</a><br/>
+      <a href="../../privacy/index.html">Privacy</a><br/>
+      <a href="../../terms/index.html">Terms</a><br/>
+      <a href="../../about/index.html">About Tusk</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

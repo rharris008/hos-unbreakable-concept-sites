@@ -1,0 +1,37 @@
+{
+  "slug": "tusk",
+  "name": "Tusk",
+  "legal_name": "Tusk",
+  "email": "hello@tusk.com.au",
+  "catchline": "Coast life, unbroken.",
+  "hero": "Built for rooms that hit hard.",
+  "archetype": "Warrior / Hero",
+  "tagline_short": "Short. Hard. Animal-tough.",
+  "fonts": {
+    "display": "Archivo Black",
+    "body": "Archivo",
+    "google": "https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&display=swap"
+  },
+  "colors": {
+    "void": "#0A0C10",
+    "bone": "#F2EDE4",
+    "navy": "#1B2A4A",
+    "strike": "#E24A3B",
+    "mute": "#9AA3B2",
+    "ink": "#0A0C10",
+    "muted": "#9AA3B2"
+  },
+  "voice": {
+    "about_lede": "Tusk is short, hard, animal-tough. Named for what doesn\u2019t flinch. Built for care, kids, galley and camp.",
+    "home_lede": "No pastel. No \u201cbe careful.\u201d Trade-grade ware for rooms that smash china for breakfast.",
+    "trust": [
+      "Hit \u2192 hold",
+      "No pastel",
+      "Fulfilled from Yatala QLD"
+    ],
+    "cta_shop": "Get the kit",
+    "cta_about": "Why Tusk"
+  },
+  "radius": "0",
+  "nav_style": "heavy"
+}

@@ -1,0 +1,36 @@
+{
+  "slug": "duron",
+  "name": "Duron",
+  "legal_name": "Duron",
+  "email": "hello@duron.com.au",
+  "catchline": "Coast life, unbroken.",
+  "hero": "Sounds like durable. Acts like it.",
+  "archetype": "Caregiver + Sage",
+  "tagline_short": "Calm toughness",
+  "fonts": {
+    "display": "DM Serif Display",
+    "body": "DM Sans",
+    "google": "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap"
+  },
+  "colors": {
+    "teal": "#0F3D3E",
+    "mint": "#D8F0EA",
+    "stone": "#F7F6F2",
+    "ink": "#142022",
+    "line": "#C5D5D1",
+    "soft": "#5A7A78"
+  },
+  "voice": {
+    "about_lede": "From Latin durus \u2014 hard. One word teaches the whole brand. Easy to say. Easy to spell. Hard to break.",
+    "home_lede": "Quiet confidence for care, kids, boats and camps. The ware you trust when smash tax isn\u2019t an option.",
+    "trust": [
+      "Sounds like durable",
+      "Calm toughness",
+      "Fulfilled from Yatala QLD"
+    ],
+    "cta_shop": "See durable ware",
+    "cta_about": "Meaning"
+  },
+  "radius": "16px",
+  "nav_style": "soft"
+}
