@@ -1,8 +1,19 @@
-# Hospitality Products — Unbreakable crockery concept sites
+# Hospitality Products — unbreakable crockery concept sites
 
-Bakeoff faces for the GC-first unbreakable crockery brand (Superware + Polysafe kit).
+Four full B2C **store** packs (not thin mocks) for the brand bakeoff.
 
-- Hub: `/`
-- Brands: `/mocks/c3n6/` · `/mocks/tusk/` · `/mocks/ironbark/` · `/mocks/duron/`
+**Catchline:** Coast life, unbroken.  
+**Fulfilment:** Hospitality Products, Yatala QLD (concept — not taking payment yet).
 
-Concept only. Not live storefront. Fulfilment path: Hospitality Products, Yatala.
+## Live hub
+https://rharris008.github.io/hos-unbreakable-concept-sites/
+
+## Stores
+- [C3N6](stores/c3n6/) — Sage + Magician
+- [Tusk](stores/tusk/) — Warrior / Hero
+- [Ironbark](stores/ironbark/) — Everyman + Explorer *(reference full pack)*
+- [Duron](stores/duron/) — Caregiver + Sage
+
+Each store: home, shop, 5 PDPs, about, shipping, returns, FAQ, contact, privacy, terms, aged-care lander.
+
+Archive thin concept pages remain under `mocks/`.

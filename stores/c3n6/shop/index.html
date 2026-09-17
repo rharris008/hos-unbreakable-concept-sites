@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Shop — C3N6</title>
+<meta name="description" content="C3N6 — Coast life, unbroken. Unbreakable crockery from Yatala QLD."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#111418;--paper:#F4F5F7;--line:#D0D4DA;--accent:#C0392B;--mute:#5C6570;--white:#FFFFFF}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+a{color:inherit}
+img{max-width:100%;display:block}
+.banner{background:var(--ink);color:#fff;font:600 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;padding:.55rem 1rem;text-align:center}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 0;border-bottom:1px solid var(--line);background:#fff;gap:1rem;flex-wrap:wrap}
+.logo{font:600 14px "IBM Plex Mono",monospace;letter-spacing:.12em;text-decoration:none}
+.logo span{color:var(--accent)}
+.logo small{display:block;font-size:10px;color:var(--mute);letter-spacing:.1em;margin-top:.25rem;font-weight:600}
+.nav{display:flex;flex-wrap:wrap;gap:.2rem 1.1rem}
+.nav a{font:600 11px "IBM Plex Mono",monospace;color:var(--mute);text-decoration:none;text-transform:uppercase}
+.nav a:hover{color:var(--accent)}
+.btn{display:inline-block;background:var(--accent);color:#fff;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 1.3rem;text-decoration:none;border:none;cursor:pointer}
+.btn-ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn[disabled],.btn.is-disabled{opacity:.45;cursor:not-allowed}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:0;min-height:62vh;border:1px solid var(--line);background:#fff;margin-top:1.25rem}
+.hero-copy{padding:3rem 2rem;display:flex;flex-direction:column;justify-content:center}
+.kicker{font:600 11px "IBM Plex Mono",monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem}
+h1,.display{font:700 clamp(2.2rem,4.5vw,3.4rem)/1.05 "IBM Plex Sans",sans-serif;letter-spacing:-.03em;margin-bottom:1rem}
+h2{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem}
+h2.display{font:700 1.8rem/1.15 "IBM Plex Sans",sans-serif;letter-spacing:-.02em;text-transform:none;color:var(--ink)}
+.lede{font:600 13px/1.6 "IBM Plex Mono",monospace;color:var(--mute);border-left:3px solid var(--accent);padding-left:1rem;margin:0 0 1.5rem;max-width:44ch}
+.hero-vis{background:var(--ink);display:grid;place-items:center;position:relative;overflow:hidden;
+background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.08) 1px,transparent 1px);background-size:32px 32px}
+.hero-vis img{width:78%;max-width:380px;mix-blend-mode:luminosity;opacity:.92}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.5rem 0}
+.chip{border:1px solid var(--line);padding:.4rem .75rem;font:600 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;background:#fff}
+.trust{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:2rem 0}
+.trust > div{background:#fff;padding:1.25rem}
+.trust h3{font:600 18px "IBM Plex Mono",monospace;color:var(--accent);margin-bottom:.35rem}
+.trust p{font-size:.9rem;color:var(--mute)}
+.section{padding:2rem 0}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.pcard{background:#fff;text-decoration:none;color:inherit;display:block}
+.pcard img{width:100%;aspect-ratio:1;object-fit:cover;filter:grayscale(.12)}
+.pcard .body{padding:.85rem 1rem;border-top:1px solid var(--line)}
+.pcard .name{font:600 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em}
+.pcard .price{font-weight:700;margin-top:.4rem}
+.pdp{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);background:#fff;margin:1.5rem 0}
+.gallery{background:var(--ink)}
+.gallery img{width:100%;aspect-ratio:1;object-fit:cover;mix-blend-mode:luminosity;opacity:.95}
+.thumbs{display:flex;gap:1px;background:var(--line)}
+.thumbs img{width:72px;height:72px;object-fit:cover;background:#fff}
+.pdp-body{padding:2rem}
+.price-lg{font:700 1.4rem "IBM Plex Sans",sans-serif;margin:.5rem 0 1rem}
+.soldby{font:600 12px "IBM Plex Mono",monospace;color:var(--accent);text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
+.bullets{margin:1rem 0;padding-left:1.1rem}
+.note-soft{font:400 12px "IBM Plex Mono",monospace;color:var(--mute);margin-top:.75rem}
+.prose{max-width:62ch}
+.prose p{margin:0 0 1rem}
+.faq details{border-bottom:1px solid var(--line);padding:1rem 0}
+.faq summary{font-weight:700;cursor:pointer}
+.form{display:grid;gap:.85rem;max-width:420px}
+.form label{font:600 11px "IBM Plex Mono",monospace;text-transform:uppercase;display:grid;gap:.35rem}
+.form input,.form textarea,.form select{padding:.7rem .8rem;border:1px solid var(--line);font:inherit;background:#fff}
+.table{width:100%;border-collapse:collapse;margin:1rem 0}
+.table th,.table td{text-align:left;padding:.65rem .5rem;border-bottom:1px solid var(--line);font-size:.95rem}
+.site-footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;margin-top:2rem;font:400 12px "IBM Plex Mono",monospace;color:var(--mute);background:#fff}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:1.25rem}
+.site-footer a{color:var(--mute);text-decoration:none}
+.site-footer a:hover{color:var(--accent)}
+.foot-brand{font:600 13px "IBM Plex Mono",monospace;color:var(--ink);letter-spacing:.1em}
+@media(max-width:860px){.hero,.pdp,.trust,.foot-grid{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body class="">
+<div class="banner">Concept store · not taking payment yet · Fulfilled from Yatala QLD</div>
+<div class="wrap">
+  <header class="site-header">
+    <a class="logo" href="../index.html">C3<span>N</span>6<small>Formula brand · coast precision</small></a>
+    <nav class="nav"><a href="../shop/index.html">Shop</a><a href="../about/index.html">About</a><a href="../landers/aged-care/index.html">Aged care</a><a href="../faq/index.html">FAQ</a><a href="../contact/index.html">Contact</a></nav>
+  </header>
+</div>
+
+<div class="wrap section">
+  <div class="kicker">Shop · C3N6</div>
+  <h1>C3N6 kit</h1>
+  <p class="lede">All prices include concept GST treatment for bakeoff only. Checkout not live. Sold by C3N6 · fulfilled from Yatala QLD.</p>
+  <div class="pgrid"><a class="pcard" href="../product/dinner-plate/index.html" data-ops-kit="Superware SUPER20207 melamine">
+  <!-- ops kit: Superware SUPER20207 melamine -->
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="C3N6 Dinner Plate"/>
+  <div class="body">
+    <div class="name">C3N6 Dinner Plate</div>
+    <div class="price">$18.90 AUD</div>
+    <div class="note">Sold by C3N6</div>
+  </div>
+</a>
+<a class="pcard" href="../product/bowl/index.html" data-ops-kit="Superware SUPER20603 melamine">
+  <!-- ops kit: Superware SUPER20603 melamine -->
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg" alt="C3N6 Bowl"/>
+  <div class="body">
+    <div class="name">C3N6 Bowl</div>
+    <div class="price">$16.90 AUD</div>
+    <div class="note">Sold by C3N6</div>
+  </div>
+</a>
+<a class="pcard" href="../product/mug/index.html" data-ops-kit="Polysafe 49720 polycarbonate">
+  <!-- ops kit: Polysafe 49720 polycarbonate -->
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg" alt="C3N6 Mug"/>
+  <div class="body">
+    <div class="name">C3N6 Mug</div>
+    <div class="price">$12.90 AUD</div>
+    <div class="note">Sold by C3N6</div>
+  </div>
+</a>
+<a class="pcard" href="../product/tumbler/index.html" data-ops-kit="Polysafe 0370035 polycarbonate">
+  <!-- ops kit: Polysafe 0370035 polycarbonate -->
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="C3N6 Tumbler"/>
+  <div class="body">
+    <div class="name">C3N6 Tumbler</div>
+    <div class="price">$11.90 AUD</div>
+    <div class="note">Sold by C3N6</div>
+  </div>
+</a>
+<a class="pcard" href="../product/platter/index.html" data-ops-kit="Superware 49660 melamine">
+  <!-- ops kit: Superware 49660 melamine -->
+  <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="C3N6 Platter"/>
+  <div class="body">
+    <div class="name">C3N6 Platter</div>
+    <div class="price">$34.90 AUD</div>
+    <div class="note">Sold by C3N6</div>
+  </div>
+</a></div>
+</div>
+
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">C3N6</div>
+      <p style="margin-top:.5rem">Coast life, unbroken.</p>
+      <p style="margin-top:.5rem">Sold by C3N6. Fulfilled by Hospitality Products, Yatala QLD.</p>
+    </div>
+    <div>
+      <strong>Shop</strong><br/>
+      <a href="../shop/index.html">All products</a><br/>
+      <a href="../product/dinner-plate/index.html">Dinner plate</a><br/>
+      <a href="../product/bowl/index.html">Bowl</a>
+    </div>
+    <div>
+      <strong>Help</strong><br/>
+      <a href="../shipping/index.html">Shipping</a><br/>
+      <a href="../returns/index.html">Returns</a><br/>
+      <a href="../faq/index.html">FAQ</a><br/>
+      <a href="../contact/index.html">Contact</a>
+    </div>
+    <div>
+      <strong>Legal</strong><br/>
+      <a href="../privacy/index.html">Privacy</a><br/>
+      <a href="../terms/index.html">Terms</a><br/>
+      <a href="../about/index.html">About C3N6</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
