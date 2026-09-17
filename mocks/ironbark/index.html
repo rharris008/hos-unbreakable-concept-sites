@@ -1,86 +1,102 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>IRONBARK — Coast life, unbroken.</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Ironbark — AU tough. Table tough.</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Instrument+Serif&display=swap');
+:root{--bark:#2C1810;--sap:#5C3A28;--sand:#E8DCC8;--leaf:#3D5A45;--rust:#A65D3F;--ink:#1A120E}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',system-ui,sans-serif;background:#0e1114;color:#f4f1ea;line-height:1.45}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
-.banner{background:#3d2a00;color:#ffe6a8;text-align:center;padding:8px;font-size:.78rem;letter-spacing:.04em}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.brand{font-weight:800;font-size:1.4rem;letter-spacing:.04em;color:#2C1810}
-.nav ul{display:flex;gap:18px;list-style:none;font-size:.85rem;opacity:.75}
-.cta{background:#2C1810;color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
-.hero{display:grid;grid-template-columns:1.05fr.95fr;gap:36px;align-items:center;padding:48px 0 36px}
-.eyebrow{color:#2C1810;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700}
-h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.05;margin:12px 0 16px}
-.hero p{opacity:.84;max-width:34em;margin-bottom:18px}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
-.btn-p{background:#2C1810;color:#fff}
-.btn-g{border:1px solid rgba(255,255,255,.28)}
-.held{margin-top:14px;font-size:.78rem;opacity:.55}
-.stage{background:linear-gradient(160deg,#1a1f24,#12151a);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-figure{background:#fff;border-radius:12px;padding:14px;min-height:140px;display:flex;align-items:center;justify-content:center}
-figure img{max-height:120px;max-width:100%;object-fit:contain}
-.cap{margin-top:10px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5}
-.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0 40px}
-.room{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;background:rgba(255,255,255,.02)}
-.room h3{font-size:.92rem;margin-bottom:4px}
-.room p{font-size:.78rem;opacity:.65}
-.story{padding:0 0 40px}
-.story h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:10px}
-.story p{opacity:.84;max-width:46em;margin-bottom:10px}
-.kits h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:14px}
-.kitrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:48px}
-.kit{background:#f4f1ea;color:#141414;border-radius:14px;overflow:hidden}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px;background:#ebe6dc}
-.pics img{height:100px;width:100%;object-fit:contain}
-.kit .body{padding:14px}
-.mat{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#2C1810;font-weight:700;margin-bottom:6px}
-.foot{border-top:1px solid rgba(255,255,255,.08);padding:22px 0 36px;font-size:.78rem;opacity:.6}
-@media(max-width:900px){.hero,.rooms,.kitrow{grid-template-columns:1fr}}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--sand);color:var(--ink);line-height:1.55}
+.draft{background:var(--bark);color:var(--sand);font:700 11px/1.3 "Source Sans 3",sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:.55rem 1rem;text-align:center}
+.grain{background:
+  repeating-linear-gradient(90deg,rgba(44,24,16,.04) 0 1px,transparent 1px 7px),
+  repeating-linear-gradient(0deg,rgba(44,24,16,.03) 0 1px,transparent 1px 11px),
+  var(--sand)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+header{display:flex;justify-content:space-between;align-items:end;padding:1.75rem 0 1.25rem;border-bottom:2px solid var(--bark)}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.75rem;color:var(--bark);letter-spacing:-.02em}
+.logo small{display:block;font-family:"Source Sans 3",sans-serif;font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--sap);margin-top:.25rem}
+nav a{color:var(--sap);text-decoration:none;font-weight:700;font-size:.85rem;margin-left:1.1rem}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:2rem;padding:3rem 0 2.5rem;align-items:center}
+.kicker{font:700 12px/1 "Source Sans 3",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);margin-bottom:.85rem}
+h1{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:clamp(2.6rem,5.5vw,3.9rem);line-height:1.05;color:var(--bark);margin-bottom:1rem}
+.lede{font-size:1.15rem;max-width:38ch;color:#3a2a22;margin-bottom:1.5rem}
+.cta{display:inline-block;background:var(--leaf);color:#F5F0E6;font-weight:700;padding:.85rem 1.3rem;text-decoration:none;border-radius:2px}
+.hero-card{background:var(--bark);color:var(--sand);padding:0;border-radius:4px;overflow:hidden;box-shadow:0 18px 40px rgba(44,24,16,.25)}
+.hero-card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;opacity:.9}
+.hero-card .cap{padding:1.1rem 1.25rem;font-family:Fraunces,serif;font-size:1.05rem}
+.band{background:var(--bark);color:var(--sand);padding:2.25rem 0;margin:1rem 0 0}
+.band .wrap{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem}
+.band h3{font-family:Fraunces,serif;font-size:1.35rem;margin-bottom:.4rem;color:#F0E6D4}
+.band p{font-size:.95rem;opacity:.85}
+.kit{padding:2.75rem 0}
+.kit h2{font-family:Fraunces,serif;font-size:2rem;color:var(--bark);margin-bottom:.35rem}
+.kit .sub{color:var(--sap);font-weight:600;margin-bottom:1.5rem}
+.kit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+.kit-grid figure{margin:0;background:#F3EBDD;border:1px solid rgba(44,24,16,.12);border-radius:3px;overflow:hidden}
+.kit-grid img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.kit-grid figcaption{padding:.7rem .8rem;font-weight:700;font-size:.8rem;color:var(--bark)}
+.story{padding:0 0 3rem;display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;align-items:start}
+.story h2{font-family:Fraunces,serif;font-size:1.8rem;color:var(--bark)}
+.story p{font-size:1.05rem;max-width:48ch}
+.chip{display:inline-block;border:1.5px solid var(--bark);padding:.35rem .7rem;margin:.25rem .35rem .25rem 0;font-weight:700;font-size:.8rem;border-radius:99px}
+footer{border-top:2px solid var(--bark);padding:1.25rem 0 2rem;font-size:.85rem;color:var(--sap);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem}
+@media(max-width:860px){.hero,.band .wrap,.kit-grid,.story{grid-template-columns:1fr}.kit-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
-<body>
-<div class="banner">CONCEPT MOCK · Draft only · Example merchandising · Not a live store · Products from hospitalityproducts.com.au</div>
+<body class="grain">
+<div class="draft">CONCEPT ONLY · Not a live store · Kit via Hospitality Products, Yatala</div>
 <div class="wrap">
-<nav class="nav"><div class="brand">IRONBARK</div><ul><li>Care</li><li>Kids</li><li>Galley</li><li>Camp</li></ul><a class="cta" href="#">Enquire</a></nav>
-<section class="hero">
-<div>
-<div class="eyebrow">Coast life, unbroken.</div>
-<h1>AU tough. Table tough.</h1>
-<p>Unbreakable tableware with timber-hard resolve — Superware + Polysafe, fulfilled from Yatala.</p>
-<div class="btns"><a class="btn btn-p" href="#">Shop kits</a><a class="btn btn-g" href="#">See the proof</a></div>
-<p class="held">Held by Hospitality Products · Yatala · Gold Coast</p>
+  <header>
+    <div class="logo">Ironbark<small>AU tough · table tough</small></div>
+    <nav><a href="#kit">The kit</a><a href="#story">Story</a></nav>
+  </header>
+  <section class="hero">
+    <div>
+      <div class="kicker">Archetype · Everyman + Explorer</div>
+      <h1>AU tough.<br/>Table tough.</h1>
+      <p class="lede">Ironbark is the timber you already trust against weather. Same idea for crockery — Superware plates, Polysafe cups, coast life unbroken.</p>
+      <a class="cta" href="#kit">Browse the kit</a>
+    </div>
+    <div class="hero-card">
+      <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg" alt="Superware bowl"/>
+      <div class="cap">Grown for weather. Set for the table.</div>
+    </div>
+  </section>
 </div>
-<div class="stage">
-<div class="grid">
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Superware platter"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Polysafe highball"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware mug"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Polysafe DOF"/></figure>
-</div>
-<div class="cap">Live stills · Superware + Polysafe · hospitalityproducts.com.au</div>
-</div>
+<section class="band">
+  <div class="wrap">
+    <div><h3>Local grit</h3><p>Named for Australian hardwood — not a fashion word. Feels true on the Gold Coast.</p></div>
+    <div><h3>Four rooms</h3><p>Care, kids, galley, camp. One brand that doesn’t pretend china belongs there.</p></div>
+    <div><h3>Trade roots</h3><p>Kit from Hospitality Products, Yatala. Trade quality, home and facility facing.</p></div>
+  </div>
 </section>
-<section class="rooms">
-<div class="room"><h3>Care</h3><p>Dignity on the cloth. Trays tip. China loses.</p></div>
-<div class="room"><h3>Kids</h3><p>OSHC chaos. Room-proof kits, not pastel toys.</p></div>
-<div class="room"><h3>Galley</h3><p>Wet deck. Wake. Bare feet. No-glass culture.</p></div>
-<div class="room"><h3>Camp</h3><p>Dust, racks, pack-down. Ceramic stays home.</p></div>
-</section>
-<section class="story"><h2>Brand story</h2><p>Ironbark is Australian toughness you already know — timber that laughs at weather. Same idea for crockery. Local grit.</p>
-<p>Material honesty: Superware = melamine dinnerware. Polysafe = polycarbonate drinkware. Built not to shatter — not a medical device.</p></section>
-<section class="kits"><h2>Hero kits</h2><div class="kitrow">
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>IRONBARK Care</h3><p>Plates, bowls + drinkware for aged care and in-home support.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>IRONBARK Kids</h3><p>Childcare / OSHC packs that take the drop and the wash.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>IRONBARK Galley</h3><p>Compact stack for boats and camp — built not to shatter.</p></div></article>
-</div></section>
-<footer class="foot"><strong>IRONBARK</strong> · Coast life, unbroken. · Concept face in Hos unbreakable bakeoff · Not live</footer>
+<div class="wrap">
+  <section class="kit" id="kit">
+    <h2>The kit</h2>
+    <p class="sub">Superware melamine · Polysafe polycarbonate</p>
+    <div class="kit-grid">
+      <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Plate"/><figcaption>Dinner plate</figcaption></figure>
+      <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Cup"/><figcaption>Polysafe cup</figcaption></figure>
+      <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Platter"/><figcaption>Share platter</figcaption></figure>
+      <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Tumbler"/><figcaption>Tumbler</figcaption></figure>
+    </div>
+  </section>
+  <section class="story" id="story">
+    <div>
+      <h2>Why Ironbark</h2>
+      <div style="margin-top:1rem">
+        <span class="chip">Care</span><span class="chip">Kids / OSHC</span><span class="chip">Galley</span><span class="chip">Camp</span>
+      </div>
+    </div>
+    <p>Some brands shout. Ironbark stands like a tree you’ve walked past a thousand times — tough, local, obvious once you hear it. It’s for Gold Coast tables that live outdoors in spirit even when they’re indoors: aged care dining rooms, childcare lunch, boat galleys, weekend camps. Coast life, unbroken.</p>
+  </section>
+  <footer>
+    <span>Ironbark · Coast life, unbroken.</span>
+    <span>Concept · Hospitality Products · Yatala QLD</span>
+  </footer>
 </div>
-</body></html>
+</body>
+</html>

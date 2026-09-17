@@ -1,86 +1,91 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>C3N6 — Coast life, unbroken.</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>C3N6 — The formula for a table that doesn’t shatter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Instrument+Serif&display=swap');
+:root{--ink:#111418;--paper:#F4F5F7;--line:#D0D4DA;--accent:#C0392B;--mute:#5C6570}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',system-ui,sans-serif;background:#0e1114;color:#f4f1ea;line-height:1.45}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
-.banner{background:#3d2a00;color:#ffe6a8;text-align:center;padding:8px;font-size:.78rem;letter-spacing:.04em}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.brand{font-weight:800;font-size:1.4rem;letter-spacing:.04em;color:#C0392B}
-.nav ul{display:flex;gap:18px;list-style:none;font-size:.85rem;opacity:.75}
-.cta{background:#C0392B;color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
-.hero{display:grid;grid-template-columns:1.05fr.95fr;gap:36px;align-items:center;padding:48px 0 36px}
-.eyebrow{color:#C0392B;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700}
-h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.05;margin:12px 0 16px}
-.hero p{opacity:.84;max-width:34em;margin-bottom:18px}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
-.btn-p{background:#C0392B;color:#fff}
-.btn-g{border:1px solid rgba(255,255,255,.28)}
-.held{margin-top:14px;font-size:.78rem;opacity:.55}
-.stage{background:linear-gradient(160deg,#1a1f24,#12151a);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-figure{background:#fff;border-radius:12px;padding:14px;min-height:140px;display:flex;align-items:center;justify-content:center}
-figure img{max-height:120px;max-width:100%;object-fit:contain}
-.cap{margin-top:10px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5}
-.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0 40px}
-.room{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;background:rgba(255,255,255,.02)}
-.room h3{font-size:.92rem;margin-bottom:4px}
-.room p{font-size:.78rem;opacity:.65}
-.story{padding:0 0 40px}
-.story h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:10px}
-.story p{opacity:.84;max-width:46em;margin-bottom:10px}
-.kits h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:14px}
-.kitrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:48px}
-.kit{background:#f4f1ea;color:#141414;border-radius:14px;overflow:hidden}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px;background:#ebe6dc}
-.pics img{height:100px;width:100%;object-fit:contain}
-.kit .body{padding:14px}
-.mat{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#C0392B;font-weight:700;margin-bottom:6px}
-.foot{border-top:1px solid rgba(255,255,255,.08);padding:22px 0 36px;font-size:.78rem;opacity:.6}
-@media(max-width:900px){.hero,.rooms,.kitrow{grid-template-columns:1fr}}
+body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.5}
+.draft{background:var(--ink);color:#fff;font:600 11px/1.4 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;padding:.55rem 1rem;text-align:center}
+.grid-bg{background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:32px 32px}
+header{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 1.5rem;border-bottom:1px solid var(--line);background:#fff}
+.logo{font:600 14px "IBM Plex Mono",monospace;letter-spacing:.12em}
+.logo span{color:var(--accent)}
+nav a{font:600 11px "IBM Plex Mono",monospace;color:var(--mute);text-decoration:none;margin-left:1.25rem;text-transform:uppercase}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:0;min-height:72vh;border-bottom:1px solid var(--line)}
+.hero-copy{padding:3.5rem 2rem 3rem 2.5rem;display:flex;flex-direction:column;justify-content:center;background:#fff}
+.tag{font:600 11px "IBM Plex Mono",monospace;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:1rem}
+h1{font:700 clamp(2.4rem,5vw,3.8rem)/1.05 "IBM Plex Sans",sans-serif;letter-spacing:-.03em;margin-bottom:1rem;max-width:14ch}
+.formula{font:600 13px/1.6 "IBM Plex Mono",monospace;color:var(--mute);border-left:3px solid var(--accent);padding-left:1rem;margin:1.25rem 0 1.75rem;max-width:42ch}
+.cta{display:inline-block;background:var(--accent);color:#fff;font:600 12px "IBM Plex Mono",monospace;letter-spacing:.1em;text-transform:uppercase;padding:.9rem 1.4rem;text-decoration:none}
+.hero-vis{position:relative;background:var(--ink);overflow:hidden;display:grid;place-items:center}
+.hero-vis img{width:78%;max-width:420px;mix-blend-mode:luminosity;opacity:.92}
+.mol{position:absolute;inset:12% 10%;border:1px dashed rgba(255,255,255,.25);pointer-events:none}
+.mol::before,.mol::after{content:"";position:absolute;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.mol::before{top:-6px;left:30%}.mol::after{bottom:-6px;right:22%}
+.panel{padding:2.5rem;border-bottom:1px solid var(--line)}
+.panel h2{font:600 12px "IBM Plex Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1.25rem}
+.elements{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.el{background:#fff;padding:1.25rem;min-height:110px}
+.el .sym{font:600 22px "IBM Plex Mono",monospace;color:var(--accent)}
+.el .name{font:600 13px/1.3 "IBM Plex Sans",sans-serif;margin-top:.35rem}
+.el .desc{font:400 12px/1.4 "IBM Plex Sans",sans-serif;color:var(--mute);margin-top:.4rem}
+.kit{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.kit figure{background:#fff;margin:0}
+.kit img{width:100%;aspect-ratio:1;object-fit:cover;display:block;filter:grayscale(.15)}
+.kit figcaption{font:600 11px "IBM Plex Mono",monospace;padding:.75rem 1rem;border-top:1px solid var(--line);text-transform:uppercase;letter-spacing:.08em}
+.story{max-width:62ch;font-size:1.05rem;color:#2a3038}
+.story strong{color:var(--accent)}
+footer{padding:1.5rem 2rem;font:400 12px "IBM Plex Mono",monospace;color:var(--mute);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+@media(max-width:860px){.hero{grid-template-columns:1fr}.elements,.kit{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<div class="banner">CONCEPT MOCK · Draft only · Example merchandising · Not a live store · Products from hospitalityproducts.com.au</div>
-<div class="wrap">
-<nav class="nav"><div class="brand">C3N6</div><ul><li>Care</li><li>Kids</li><li>Galley</li><li>Camp</li></ul><a class="cta" href="#">Enquire</a></nav>
+<div class="draft">CONCEPT ONLY · Not a live store · Kit via Hospitality Products, Yatala</div>
+<header>
+  <div class="logo">C3<span>N</span>6</div>
+  <nav><a href="#formula">Formula</a><a href="#kit">Kit</a><a href="#rooms">Rooms</a></nav>
+</header>
 <section class="hero">
-<div>
-<div class="eyebrow">Coast life, unbroken.</div>
-<h1>The formula for a table that doesn’t shatter.</h1>
-<p>Trade-grade Superware melamine + Polysafe drinkware. Held by Hospitality Products, Yatala.</p>
-<div class="btns"><a class="btn btn-p" href="#">Shop kits</a><a class="btn btn-g" href="#">See the proof</a></div>
-<p class="held">Held by Hospitality Products · Yatala · Gold Coast</p>
-</div>
-<div class="stage">
-<div class="grid">
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Superware platter"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Polysafe highball"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware mug"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Polysafe DOF"/></figure>
-</div>
-<div class="cap">Live stills · Superware + Polysafe · hospitalityproducts.com.au</div>
-</div>
+  <div class="hero-copy">
+    <div class="tag">Archetype · Sage + Magician</div>
+    <h1>The formula for a table that doesn’t shatter.</h1>
+    <p class="formula">Melamine’s real formula is C₃H₆N₆. We cut it to C3N6 — rhythm you can say, meaning you can keep. Precision brand. Coast life, unbroken.</p>
+    <a class="cta" href="#kit">See the kit</a>
+  </div>
+  <div class="hero-vis grid-bg">
+    <div class="mol"></div>
+    <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware plate — Hospitality Products"/>
+  </div>
 </section>
-<section class="rooms">
-<div class="room"><h3>Care</h3><p>Dignity on the cloth. Trays tip. China loses.</p></div>
-<div class="room"><h3>Kids</h3><p>OSHC chaos. Room-proof kits, not pastel toys.</p></div>
-<div class="room"><h3>Galley</h3><p>Wet deck. Wake. Bare feet. No-glass culture.</p></div>
-<div class="room"><h3>Camp</h3><p>Dust, racks, pack-down. Ceramic stays home.</p></div>
+<section class="panel" id="formula">
+  <h2>Periodic table of the brand</h2>
+  <div class="elements">
+    <div class="el"><div class="sym">C3</div><div class="name">Chemistry wink</div><div class="desc">Not a random code — a cut of the real melamine formula.</div></div>
+    <div class="el"><div class="sym">N6</div><div class="name">Nitrogen grit</div><div class="desc">The half that holds the structure. Same energy on the table.</div></div>
+    <div class="el"><div class="sym">AU</div><div class="name">Gold Coast hold</div><div class="desc">Built for care, kids, galley and camp on this coast.</div></div>
+    <div class="el"><div class="sym">HP</div><div class="name">Hospitality Products</div><div class="desc">Fulfilled from Yatala. Trade kit, home-facing brand.</div></div>
+  </div>
 </section>
-<section class="story"><h2>Brand story</h2><p>C3N6 winks at melamine chemistry (C₃H₆N₆) — cut for rhythm, kept for meaning. Formula brand: precise, modern, a little lab, a lot coast.</p>
-<p>Material honesty: Superware = melamine dinnerware. Polysafe = polycarbonate drinkware. Built not to shatter — not a medical device.</p></section>
-<section class="kits"><h2>Hero kits</h2><div class="kitrow">
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>C3N6 Care</h3><p>Plates, bowls + drinkware for aged care and in-home support.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>C3N6 Kids</h3><p>Childcare / OSHC packs that take the drop and the wash.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>C3N6 Galley</h3><p>Compact stack for boats and camp — built not to shatter.</p></div></article>
-</div></section>
-<footer class="foot"><strong>C3N6</strong> · Coast life, unbroken. · Concept face in Hos unbreakable bakeoff · Not live</footer>
-</div>
-</body></html>
+<section class="panel" id="kit">
+  <h2>Specimen kit · Superware + Polysafe</h2>
+  <div class="kit">
+    <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Plate"/><figcaption>Plate · Superware</figcaption></figure>
+    <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Cup"/><figcaption>Cup · Polysafe</figcaption></figure>
+    <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg" alt="Bowl"/><figcaption>Bowl · Superware</figcaption></figure>
+  </div>
+</section>
+<section class="panel" id="rooms">
+  <h2>Lab notes · rooms</h2>
+  <p class="story">C3N6 is for people who want the <strong>why</strong> as much as the ware. Care kitchens that can’t afford smash. OSHC tables that take a hit. Galleys that don’t forgive china. Camp packs that fold into real life. Same formula. Four rooms.</p>
+</section>
+<footer>
+  <span>C3N6 · Coast life, unbroken.</span>
+  <span>Concept · Hospitality Products · Yatala QLD</span>
+</footer>
+</body>
+</html>

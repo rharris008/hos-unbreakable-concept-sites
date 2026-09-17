@@ -1,86 +1,91 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>TUSK — Coast life, unbroken.</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>TUSK — Built for rooms that hit hard</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600;700&display=swap" rel="stylesheet"/>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Instrument+Serif&display=swap');
+:root{--void:#0A0C10;--bone:#F2EDE4;--navy:#1B2A4A;--strike:#E8E2D6;--mute:#9AA3B2}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',system-ui,sans-serif;background:#0e1114;color:#f4f1ea;line-height:1.45}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
-.banner{background:#3d2a00;color:#ffe6a8;text-align:center;padding:8px;font-size:.78rem;letter-spacing:.04em}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.brand{font-weight:800;font-size:1.4rem;letter-spacing:.04em;color:#1B2A4A}
-.nav ul{display:flex;gap:18px;list-style:none;font-size:.85rem;opacity:.75}
-.cta{background:#1B2A4A;color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
-.hero{display:grid;grid-template-columns:1.05fr.95fr;gap:36px;align-items:center;padding:48px 0 36px}
-.eyebrow{color:#1B2A4A;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700}
-h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.05;margin:12px 0 16px}
-.hero p{opacity:.84;max-width:34em;margin-bottom:18px}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
-.btn-p{background:#1B2A4A;color:#fff}
-.btn-g{border:1px solid rgba(255,255,255,.28)}
-.held{margin-top:14px;font-size:.78rem;opacity:.55}
-.stage{background:linear-gradient(160deg,#1a1f24,#12151a);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-figure{background:#fff;border-radius:12px;padding:14px;min-height:140px;display:flex;align-items:center;justify-content:center}
-figure img{max-height:120px;max-width:100%;object-fit:contain}
-.cap{margin-top:10px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5}
-.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0 40px}
-.room{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;background:rgba(255,255,255,.02)}
-.room h3{font-size:.92rem;margin-bottom:4px}
-.room p{font-size:.78rem;opacity:.65}
-.story{padding:0 0 40px}
-.story h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:10px}
-.story p{opacity:.84;max-width:46em;margin-bottom:10px}
-.kits h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:14px}
-.kitrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:48px}
-.kit{background:#f4f1ea;color:#141414;border-radius:14px;overflow:hidden}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px;background:#ebe6dc}
-.pics img{height:100px;width:100%;object-fit:contain}
-.kit .body{padding:14px}
-.mat{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#1B2A4A;font-weight:700;margin-bottom:6px}
-.foot{border-top:1px solid rgba(255,255,255,.08);padding:22px 0 36px;font-size:.78rem;opacity:.6}
-@media(max-width:900px){.hero,.rooms,.kitrow{grid-template-columns:1fr}}
+body{font-family:Archivo,system-ui,sans-serif;background:var(--void);color:var(--bone);line-height:1.45}
+.draft{background:#E24A3B;color:#fff;font:700 11px/1.3 Archivo,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:.6rem 1rem;text-align:center}
+.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;border-bottom:4px solid var(--bone)}
+.mark{font-family:"Archivo Black",sans-serif;font-size:1.35rem;letter-spacing:.04em}
+.top a{color:var(--mute);text-decoration:none;font-weight:600;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;margin-left:1rem}
+.hero{position:relative;min-height:88vh;display:grid;grid-template-rows:1fr auto;overflow:hidden}
+.hero-img{position:absolute;inset:0;background:var(--navy)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:center 35%;opacity:.55;filter:contrast(1.15) saturate(.7)}
+.hero-copy{position:relative;z-index:2;padding:3rem 1.5rem 1rem;max-width:18ch}
+.eyebrow{font:700 11px/1 Archivo,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#E24A3B;margin-bottom:1rem}
+h1{font-family:"Archivo Black",sans-serif;font-size:clamp(3.2rem,12vw,6.5rem);line-height:.88;letter-spacing:-.02em;text-transform:uppercase}
+.punch{position:relative;z-index:2;background:var(--bone);color:var(--void);padding:1.5rem 1.5rem 1.75rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.punch p{font:700 1.15rem/1.25 Archivo,sans-serif;max-width:28ch}
+.btn{background:var(--void);color:var(--bone);font:700 12px Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;padding:1rem 1.35rem;text-decoration:none;border:2px solid var(--void)}
+.strip{display:grid;grid-template-columns:1fr 1fr;border-top:4px solid var(--bone)}
+.strip article{padding:2rem 1.5rem;border-right:4px solid var(--bone);min-height:220px}
+.strip article:last-child{border-right:0;background:var(--navy)}
+.strip h2{font-family:"Archivo Black",sans-serif;font-size:1.6rem;text-transform:uppercase;margin-bottom:.75rem;letter-spacing:.02em}
+.strip p{color:var(--mute);font-weight:600;max-width:34ch}
+.strip article:last-child p{color:#C9D0DC}
+.stack{display:grid;grid-template-columns:2fr 1fr 1fr;gap:0;border-top:4px solid var(--bone)}
+.stack figure{margin:0;border-right:4px solid var(--bone);background:#111}
+.stack figure:last-child{border-right:0}
+.stack img{width:100%;height:280px;object-fit:cover;display:block;filter:grayscale(.4) contrast(1.1)}
+.stack figcaption{font:700 11px/1.2 Archivo,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:.85rem 1rem;background:var(--bone);color:var(--void)}
+.rooms{padding:2.5rem 1.5rem;border-top:4px solid var(--bone)}
+.rooms h2{font-family:"Archivo Black",sans-serif;font-size:2rem;text-transform:uppercase;margin-bottom:1rem}
+.rooms ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--bone)}
+.rooms li{background:var(--void);padding:1.25rem;font:700 1rem Archivo,sans-serif;text-transform:uppercase;letter-spacing:.04em}
+.rooms li span{display:block;margin-top:.4rem;font:600 12px Archivo,sans-serif;color:var(--mute);letter-spacing:0;text-transform:none;font-weight:600}
+footer{padding:1.25rem 1.5rem;border-top:4px solid var(--bone);font:700 11px Archivo,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem}
+@media(max-width:800px){.strip,.stack,.rooms ul{grid-template-columns:1fr}.stack img{height:200px}}
 </style>
 </head>
 <body>
-<div class="banner">CONCEPT MOCK · Draft only · Example merchandising · Not a live store · Products from hospitalityproducts.com.au</div>
-<div class="wrap">
-<nav class="nav"><div class="brand">TUSK</div><ul><li>Care</li><li>Kids</li><li>Galley</li><li>Camp</li></ul><a class="cta" href="#">Enquire</a></nav>
+<div class="draft">CONCEPT ONLY · Not a live store · Kit via Hospitality Products, Yatala</div>
+<div class="top">
+  <div class="mark">TUSK</div>
+  <div><a href="#kit">Kit</a><a href="#rooms">Rooms</a></div>
+</div>
 <section class="hero">
-<div>
-<div class="eyebrow">Coast life, unbroken.</div>
-<h1>Built for rooms that hit hard.</h1>
-<p>Animal-tough kits for care, kids, galley and camp. Superware plates. Polysafe cups. Gold Coast hold.</p>
-<div class="btns"><a class="btn btn-p" href="#">Shop kits</a><a class="btn btn-g" href="#">See the proof</a></div>
-<p class="held">Held by Hospitality Products · Yatala · Gold Coast</p>
-</div>
-<div class="stage">
-<div class="grid">
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Superware platter"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Polysafe highball"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware mug"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Polysafe DOF"/></figure>
-</div>
-<div class="cap">Live stills · Superware + Polysafe · hospitalityproducts.com.au</div>
-</div>
+  <div class="hero-img"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Superware platter"/></div>
+  <div class="hero-copy">
+    <div class="eyebrow">Archetype · Warrior / Hero</div>
+    <h1>Built for rooms that hit hard.</h1>
+  </div>
+  <div class="punch">
+    <p>Short. Hard. Animal-tough. Named for what doesn’t flinch. Coast life, unbroken.</p>
+    <a class="btn" href="#kit">Get the kit</a>
+  </div>
 </section>
-<section class="rooms">
-<div class="room"><h3>Care</h3><p>Dignity on the cloth. Trays tip. China loses.</p></div>
-<div class="room"><h3>Kids</h3><p>OSHC chaos. Room-proof kits, not pastel toys.</p></div>
-<div class="room"><h3>Galley</h3><p>Wet deck. Wake. Bare feet. No-glass culture.</p></div>
-<div class="room"><h3>Camp</h3><p>Dust, racks, pack-down. Ceramic stays home.</p></div>
+<section class="strip">
+  <article>
+    <h2>No pastel.</h2>
+    <p>Tusk is not a soft lifestyle brand. It’s trade-grade Superware and Polysafe for places that smash china for breakfast.</p>
+  </article>
+  <article>
+    <h2>Hit → hold.</h2>
+    <p>Care drop. Kids chaos. Galley slam. Camp pack. Same face. Same grit. Hospitality Products, Yatala.</p>
+  </article>
 </section>
-<section class="story"><h2>Brand story</h2><p>Tusk is short, hard, animal-tough energy for the table — named for what doesn’t flinch. Named for what doesn’t flinch. No pastel. No be careful.</p>
-<p>Material honesty: Superware = melamine dinnerware. Polysafe = polycarbonate drinkware. Built not to shatter — not a medical device.</p></section>
-<section class="kits"><h2>Hero kits</h2><div class="kitrow">
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>TUSK Care</h3><p>Plates, bowls + drinkware for aged care and in-home support.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>TUSK Kids</h3><p>Childcare / OSHC packs that take the drop and the wash.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>TUSK Galley</h3><p>Compact stack for boats and camp — built not to shatter.</p></div></article>
-</div></section>
-<footer class="foot"><strong>TUSK</strong> · Coast life, unbroken. · Concept face in Hos unbreakable bakeoff · Not live</footer>
-</div>
-</body></html>
+<section class="stack" id="kit">
+  <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Plate"/><figcaption>Plate · doesn’t flinch</figcaption></figure>
+  <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Tumbler"/><figcaption>Polysafe tumbler</figcaption></figure>
+  <figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg" alt="Mug"/><figcaption>Mug · hard hold</figcaption></figure>
+</section>
+<section class="rooms" id="rooms">
+  <h2>Four rooms. One face.</h2>
+  <ul>
+    <li>Care<span>Aged & disability dining that survives the shift</span></li>
+    <li>Kids<span>OSHC / childcare tables that take a hit</span></li>
+    <li>Galley<span>Boat & venue ware that doesn’t forgive china</span></li>
+    <li>Camp<span>Coast packs that fold flat into real life</span></li>
+  </ul>
+</section>
+<footer>
+  <span>Tusk · Coast life, unbroken.</span>
+  <span>Concept · Hospitality Products · Yatala</span>
+</footer>
+</body>
+</html>

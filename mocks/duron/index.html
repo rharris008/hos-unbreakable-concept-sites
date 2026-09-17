@@ -1,86 +1,101 @@
 <!doctype html>
 <html lang="en-AU">
 <head>
-<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>DURON — Coast life, unbroken.</title>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Duron — Sounds like durable. Acts like it.</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700;800&family=Instrument+Serif&display=swap');
+:root{--teal:#0F3D3E;--mint:#D8F0EA;--stone:#F7F6F2;--ink:#142022;--line:#C5D5D1;--soft:#5A7A78}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'DM Sans',system-ui,sans-serif;background:#0e1114;color:#f4f1ea;line-height:1.45}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1100px;margin:0 auto;padding:0 22px}
-.banner{background:#3d2a00;color:#ffe6a8;text-align:center;padding:8px;font-size:.78rem;letter-spacing:.04em}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-.brand{font-weight:800;font-size:1.4rem;letter-spacing:.04em;color:#0F3D3E}
-.nav ul{display:flex;gap:18px;list-style:none;font-size:.85rem;opacity:.75}
-.cta{background:#0F3D3E;color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;font-size:.85rem}
-.hero{display:grid;grid-template-columns:1.05fr.95fr;gap:36px;align-items:center;padding:48px 0 36px}
-.eyebrow{color:#0F3D3E;text-transform:uppercase;letter-spacing:.16em;font-size:.72rem;font-weight:700}
-h1{font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:clamp(2.4rem,4.6vw,3.6rem);line-height:1.05;margin:12px 0 16px}
-.hero p{opacity:.84;max-width:34em;margin-bottom:18px}
-.btns{display:flex;gap:10px;flex-wrap:wrap}
-.btn{padding:12px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
-.btn-p{background:#0F3D3E;color:#fff}
-.btn-g{border:1px solid rgba(255,255,255,.28)}
-.held{margin-top:14px;font-size:.78rem;opacity:.55}
-.stage{background:linear-gradient(160deg,#1a1f24,#12151a);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-figure{background:#fff;border-radius:12px;padding:14px;min-height:140px;display:flex;align-items:center;justify-content:center}
-figure img{max-height:120px;max-width:100%;object-fit:contain}
-.cap{margin-top:10px;font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5}
-.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:10px 0 40px}
-.room{border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;background:rgba(255,255,255,.02)}
-.room h3{font-size:.92rem;margin-bottom:4px}
-.room p{font-size:.78rem;opacity:.65}
-.story{padding:0 0 40px}
-.story h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:10px}
-.story p{opacity:.84;max-width:46em;margin-bottom:10px}
-.kits h2{font-family:'Instrument Serif',Georgia,serif;font-size:1.8rem;margin-bottom:14px}
-.kitrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-bottom:48px}
-.kit{background:#f4f1ea;color:#141414;border-radius:14px;overflow:hidden}
-.pics{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:12px;background:#ebe6dc}
-.pics img{height:100px;width:100%;object-fit:contain}
-.kit .body{padding:14px}
-.mat{font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:#0F3D3E;font-weight:700;margin-bottom:6px}
-.foot{border-top:1px solid rgba(255,255,255,.08);padding:22px 0 36px;font-size:.78rem;opacity:.6}
-@media(max-width:900px){.hero,.rooms,.kitrow{grid-template-columns:1fr}}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--stone);color:var(--ink);line-height:1.55}
+.draft{background:var(--teal);color:#E7F7F3;font:500 11px/1.3 "DM Sans",sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:.55rem 1rem;text-align:center}
+.shell{max-width:980px;margin:0 auto;padding:0 1.5rem}
+header{padding:1.5rem 0;display:flex;justify-content:space-between;align-items:center}
+.word{font-family:"DM Serif Display",Georgia,serif;font-size:1.6rem;color:var(--teal);letter-spacing:-.01em}
+nav a{color:var(--soft);text-decoration:none;font-weight:500;font-size:.9rem;margin-left:1.25rem}
+.hero{padding:2.5rem 0 3rem;text-align:center}
+.arch{display:inline-block;background:var(--mint);color:var(--teal);font-weight:700;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:.4rem .75rem;border-radius:99px;margin-bottom:1.25rem}
+h1{font-family:"DM Serif Display",Georgia,serif;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.12;color:var(--teal);max-width:16ch;margin:0 auto 1rem}
+.sub{font-size:1.15rem;color:var(--soft);max-width:36ch;margin:0 auto 1.75rem}
+.primary{display:inline-block;background:var(--teal);color:#fff;font-weight:700;padding:.95rem 1.5rem;border-radius:999px;text-decoration:none}
+.teach{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin:1rem 0 3rem}
+.teach article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.75rem;text-align:left}
+.teach h2{font-family:"DM Serif Display",serif;font-size:1.55rem;color:var(--teal);margin-bottom:.5rem}
+.teach p{color:#3a4e4c;font-size:1rem}
+.latin{font-size:.8rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-bottom:.65rem}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;margin-bottom:3rem}
+.gallery .big,.gallery .stack figure{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--line);margin:0}
+.gallery img{width:100%;display:block;object-fit:cover}
+.gallery .big img{aspect-ratio:5/4}
+.gallery .stack{display:grid;gap:1rem}
+.gallery .stack img{aspect-ratio:1}
+.gallery figcaption{padding:1rem 1.15rem;font-weight:600;font-size:.9rem;color:var(--teal)}
+.rooms{background:var(--mint);border-radius:24px;padding:2rem 1.75rem;margin-bottom:3rem}
+.rooms h2{font-family:"DM Serif Display",serif;font-size:1.7rem;color:var(--teal);margin-bottom:1rem;text-align:center}
+.rooms ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem}
+.rooms li{background:#fff;border-radius:14px;padding:1.1rem;text-align:center;font-weight:700;color:var(--teal)}
+.rooms li span{display:block;margin-top:.35rem;font-weight:500;font-size:.82rem;color:var(--soft)}
+.promise{text-align:center;max-width:42ch;margin:0 auto 3rem;font-size:1.1rem;color:#3a4e4c}
+footer{border-top:1px solid var(--line);padding:1.5rem 0 2.5rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.85rem;color:var(--soft)}
+@media(max-width:800px){.teach,.gallery,.rooms ul{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="banner">CONCEPT MOCK · Draft only · Example merchandising · Not a live store · Products from hospitalityproducts.com.au</div>
-<div class="wrap">
-<nav class="nav"><div class="brand">DURON</div><ul><li>Care</li><li>Kids</li><li>Galley</li><li>Camp</li></ul><a class="cta" href="#">Enquire</a></nav>
-<section class="hero">
-<div>
-<div class="eyebrow">Coast life, unbroken.</div>
-<h1>Sounds like durable. Acts like it.</h1>
-<p>From hard roots — Superware plates and Polysafe cups that take the drop. Held on the Gold Coast.</p>
-<div class="btns"><a class="btn btn-p" href="#">Shop kits</a><a class="btn btn-g" href="#">See the proof</a></div>
-<p class="held">Held by Hospitality Products · Yatala · Gold Coast</p>
+<div class="draft">CONCEPT ONLY · Not a live store · Kit via Hospitality Products, Yatala</div>
+<div class="shell">
+  <header>
+    <div class="word">Duron</div>
+    <nav><a href="#meaning">Meaning</a><a href="#kit">Kit</a><a href="#rooms">Rooms</a></nav>
+  </header>
+  <section class="hero">
+    <div class="arch">Archetype · Caregiver + Sage</div>
+    <h1>Sounds like durable. Acts like it.</h1>
+    <p class="sub">One word teaches the brand. From Latin <em>durus</em> — hard. Coast life, unbroken.</p>
+    <a class="primary" href="#kit">See durable ware</a>
+  </section>
+  <section class="teach" id="meaning">
+    <article>
+      <div class="latin">Etymology</div>
+      <h2>Durus → Duron</h2>
+      <p>Hard, lasting, dependable. The name is the proof line — no slogan gymnastics required.</p>
+    </article>
+    <article>
+      <div class="latin">Promise</div>
+      <h2>Calm toughness</h2>
+      <p>Not shouty. Not fragile-fine. The quiet confidence of ware you trust with kids, care, boats and camps.</p>
+    </article>
+  </section>
+  <section class="gallery" id="kit">
+    <figure class="big">
+      <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware plate"/>
+      <figcaption>Superware · dinner plate</figcaption>
+    </figure>
+    <div class="stack">
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Polysafe cup"/>
+        <figcaption>Polysafe cup</figcaption>
+      </figure>
+      <figure>
+        <img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg" alt="Bowl"/>
+        <figcaption>Bowl · everyday hard</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section class="rooms" id="rooms">
+    <h2>Where Duron belongs</h2>
+    <ul>
+      <li>Care<span>Shift-proof dining</span></li>
+      <li>Kids<span>OSHC & home</span></li>
+      <li>Galley<span>Boat & venue</span></li>
+      <li>Camp<span>Coast weekends</span></li>
+    </ul>
+  </section>
+  <p class="promise">Fulfilled by Hospitality Products in Yatala. Concept brand face only — pick when the name locks.</p>
+  <footer>
+    <span>Duron · Coast life, unbroken.</span>
+    <span>Concept · Hospitality Products · Yatala QLD</span>
+  </footer>
 </div>
-<div class="stage">
-<div class="grid">
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg" alt="Superware platter"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp" alt="Polysafe highball"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg" alt="Superware mug"/></figure>
-<figure><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp" alt="Polysafe DOF"/></figure>
-</div>
-<div class="cap">Live stills · Superware + Polysafe · hospitalityproducts.com.au</div>
-</div>
-</section>
-<section class="rooms">
-<div class="room"><h3>Care</h3><p>Dignity on the cloth. Trays tip. China loses.</p></div>
-<div class="room"><h3>Kids</h3><p>OSHC chaos. Room-proof kits, not pastel toys.</p></div>
-<div class="room"><h3>Galley</h3><p>Wet deck. Wake. Bare feet. No-glass culture.</p></div>
-<div class="room"><h3>Camp</h3><p>Dust, racks, pack-down. Ceramic stays home.</p></div>
-</section>
-<section class="story"><h2>Brand story</h2><p>Duron sounds like durable because it should. Latin durus — hard. One word teaches the brand. Easy to say. Hard to break.</p>
-<p>Material honesty: Superware = melamine dinnerware. Polysafe = polycarbonate drinkware. Built not to shatter — not a medical device.</p></section>
-<section class="kits"><h2>Hero kits</h2><div class="kitrow">
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49660_2c8130e3-ee7b-4807-a1ab-dca7c2be9392.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370047_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>DURON Care</h3><p>Plates, bowls + drinkware for aged care and in-home support.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20603_f9a084ec-7c38-4594-a67c-3738e19ed108.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/SUPER20207_256c5f1c-ab88-4e77-b60d-37ab28c9efe5.jpg"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>DURON Kids</h3><p>Childcare / OSHC packs that take the drop and the wash.</p></div></article>
-<article class="kit"><div class="pics"><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/49720_cc3629ef-eaea-4dd4-a33a-7f423b7ae885.jpg"/><img src="https://cdn.shopify.com/s/files/1/0918/7390/2955/files/0370035_website.webp"/></div><div class="body"><div class="mat">Superware · Polysafe</div><h3>DURON Galley</h3><p>Compact stack for boats and camp — built not to shatter.</p></div></article>
-</div></section>
-<footer class="foot"><strong>DURON</strong> · Coast life, unbroken. · Concept face in Hos unbreakable bakeoff · Not live</footer>
-</div>
-</body></html>
+</body>
+</html>
